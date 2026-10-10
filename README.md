@@ -8,7 +8,7 @@ Official codebase & brand assets for SSRANK STUDIO and Mind Elite Design Academy
 ---
 
 ### 🎯 What is SSRANK?
-SSRANK STUDIO is a luxury brand identity studio based in Ibadan, NG. We build elite visual systems for startups, academies, and businesses that want to rank.
+SSRANK STUDIO is a luxury brand identity studio based in Edo State ,NG. We build elite visual systems for startups, academies, and businesses that want to rank.
 
 ### ✨ Services
 - Brand Identity & Logo Systems
