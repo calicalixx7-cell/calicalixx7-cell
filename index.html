@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SSRANK STUDIO — We Design Brands That Rank. Logos, flyers, graphic design and digital art in Benin City, Edo State, Nigeria.">
+<meta name="theme-color" content="#0b0b0d">
+<title>SSRANK STUDIO | We Design Brands That Rank</title>
+
+<style>
+:root {
+  --bg:#09090b;
+  --surface:#141418;
+  --text:#f7f7f8;
+  --muted:#b8b8c2;
+  --gold:#e7b84b;
+  --gold2:#ffe2a0;
+  --green:#25d366;
+  --line:rgba(255,255,255,.12);
+}
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;scroll-padding-top:90px}
+body {
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.6;
+}
+a {color:inherit}
+.container {width:min(1160px,calc(100% - 32px));margin:auto}
+.top-note {
+  padding:9px;
+  text-align:center;
+  background:#17140d;
+  color:var(--gold2);
+}
+header {
+  position:sticky;
+  top:0;
+  z-index:10;
+  background:#09090bf5;
+  border-bottom:1px solid var(--line);
+}
+.nav {
+  min-height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:15px;
+}
+.brand {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  text-decoration:none;
+  font-weight:900;
+}
+.brand-mark {
+  padding:10px;
+  background:var(--gold);
+  color:#17130a;
+  border-radius:12px;
+}
+.brand small {
+  display:block;
+  color:var(--muted);
+  font-size:10px;
+}
+.navlinks {
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.navlinks a {
+  text-decoration:none;
+  color:var(--muted);
+}
+.navlinks a:hover {color:var(--gold2)}
+.nav-cta {
+  background:var(--gold);
+  color:#17130a!important;
+  padding:10px 14px;
+  border-radius:25px;
+  font-weight:bold;
+}
+.menu-btn {
+  display:none;
+  padding:10px;
+  background:var(--surface);
+  color:white;
+  border:1px solid var(--line);
+  border-radius:10px;
+}
+.hero {padding:75px 0}
+.hero-grid {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:center;
+}
+.eyebrow {
+  color:var(--gold2);
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+h1 {
+  font-size:clamp(42px,7vw,82px);
+  line-height:1;
+  letter-spacing:-3px;
+}
+h1 span {color:var(--gold)}
+.lead {color:var(--muted);font-size:18px}
+.actions {display:flex;flex-wrap:wrap;gap:12px;margin:25px 0}
+.btn {
+  display:inline-block;
+  padding:12px 18px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  border:1px solid var(--line);
+  cursor:pointer;
+}
+.btn-gold {background:var(--gold);color:#17130a}
+.btn-green {background:var(--green);color:#062b12}
+.btn-outline {color:white;background:transparent}
+.showcase {
+  min-height:350px;
+  display:grid;
+  place-items:center;
+  text-align:center;
+  border:1px solid #80652d;
+  border-radius:25px;
+  background:radial-gradient(circle,#3a2e16,#111114 75%);
+}
+.wolf {font-size:85px}
+.showcase-title {font-size:48px;font-weight:1000;letter-spacing:5px}
+.showcase-tag {color:var(--gold2);letter-spacing:3px}
+.showcase-caption {color:var(--muted)}
+section {padding:65px 0;border-top:1px solid var(--line)}
+.section-head {max-width:750px;margin-bottom:30px}
+.section-head h2 {font-size:clamp(30px,5vw,48px);line-height:1.1}
+.section-head p,.panel p,.service p {color:var(--muted)}
+.grid {display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service,.panel {
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+}
+.service {padding:23px}
+.service:hover {border-color:var(--gold)}
+.art {
+  min-height:100px;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(135deg,#302719,#111114);
+  color:var(--gold2);
+  font-size:45px;
+  border-radius:13px;
+}
+.service h3 {margin-bottom:8px}
+.mini-link {color:var(--gold2);font-weight:bold}
+.split {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+.panel {padding:28px}
+.panel h3 {font-size:25px;line-height:1.2}
+.list li {margin:10px 0;color:var(--muted)}
+.stats {
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+  margin:20px 0;
+}
+.stat {
+  background:#111114;
+  border:1px solid var(--line);
+  padding:12px;
+  border-radius:12px;
+}
+.stat strong {display:block;color:var(--gold2)}
+.stat span {font-size:12px;color:var(--muted)}
+.academy {
+  background:linear-gradient(125deg,#292113,#171519);
+  border-color:#80652d;
+}
+.pay-card {
+  display:flex;
+  align-items:center;
+  gap:15px;
+  background:#111114;
+  border:1px solid #80652d;
+  border-radius:15px;
+  padding:16px;
+  margin:20px 0;
+}
+.opay-mark {
+  background:#12a85b;
+  color:white;
+  padding:17px 10px;
+  border-radius:12px;
+  font-weight:bold;
+}
+.fine {font-size:13px;color:#999}
+.contact-panel {
+  padding:30px;
+  border:1px solid #80652d;
+  border-radius:20px;
+  background:linear-gradient(120deg,#211c12,#151519);
+}
+.contact-panel h2 {font-size:38px;line-height:1.1}
+.info-row {margin:20px 0}
+.info-row small {display:block;color:var(--muted)}
+.info-row a {font-weight:bold;text-decoration:none}
+footer {
+  padding:25px 0;
+  border-top:1px solid var(--line);
+  color:var(--muted);
+}
+.footer-inner {
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  flex-wrap:wrap;
+}
+.float-wa {
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  z-index:8;
+  padding:13px 17px;
+  border-radius:30px;
+  background:var(--green);
+  color:#062b12;
+  text-decoration:none;
+  font-weight:bold;
+}
+.modal-backdrop {
+  display:none;
+  position:fixed;
+  inset:0;
+  z-index:20;
+  background:#000c;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+}
+.modal-backdrop.show {display:flex}
+.modal {
+  width:min(100%,450px);
+  background:#17171c;
+  border:1px solid var(--gold);
+  border-radius:20px;
+  padding:25px;
+}
+.modal p {color:var(--muted)}
+.warning {color:var(--gold2)!important}
+.close-modal {
+  float:right;
+  padding:7px;
+  background:transparent;
+  color:white;
+  border:1px solid var(--line);
+  border-radius:8px;
+}
+@media(max-width:850px) {
+  .hero-grid,.split {grid-template-columns:1fr}
+  .grid {grid-template-columns:repeat(2,1fr)}
+  .menu-btn {display:block}
+  .nav {position:relative}
+  .navlinks {
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    right:0;
+    padding:20px;
+    background:#151519;
+    border:1px solid var(--line);
+    border-radius:15px;
+    flex-direction:column;
+    align-items:stretch;
+  }
+  .navlinks.open {display:flex}
+}
+@media(max-width:560px) {
+  .grid,.stats {grid-template-columns:1fr}
+  .hero {padding:45px 0}
+  .showcase {min-height:270px}
+  .panel {padding:20px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-note">
+  🐺 SSRANK STUDIO — We Design Brands That Rank.
+</div>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <span class="brand-mark">SR</span>
+      <span>SSRANK STUDIO
+        <small>THINK ELITE. DESIGN ELITE.</small>
+      </span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn">☰ Menu</button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#services">Services</a>
+      <a href="#academy">Academy</a>
+      <a href="#payment">Payment</a>
+      <a href="#location">Location</a>
+      <a href="#contact" class="nav-cta">Customer Service</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Creative Studio • Benin City, Nigeria</div>
+      <h1>We Design<br>Brands That <span>Rank.</span></h1>
+
+      <p class="lead">
+        Welcome to SSRANK STUDIO — your creative partner for
+        premium brand identity, logos, flyers, social media graphics,
+        digital art, and design training. We help ideas look professional
+        and brands stand out.
+      </p>
+
+      <div class="actions">
+        <a class="btn btn-gold" href="#services">Explore Our Services ↗</a>
+        <a class="btn btn-outline"
+           href="https://wa.me/2349131164084?text=Hello%20SSRANK%20STUDIO">
+           Chat on WhatsApp
+        </a>
+      </div>
+
+      <p class="fine">Founder: Cali SsRank • Edo State, Nigeria</p>
+    </div>
+
+    <div class="showcase">
+      <div>
+        <div class="wolf">🐺</div>
+        <div class="showcase-title">SSRANK</div>
+        <div class="showcase-tag">STUDIO • CREATIVE • ELITE</div>
+        <p class="showcase-caption">Identity. Design. Impact.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Our Creative Services</div>
+      <h2>Make Your Brand Impossible to Ignore.</h2>
+      <p>Choose a service and contact customer support to discuss your idea,
+      deadline, and price.</p>
+    </div>
+
+    <div class="grid">
+
+      <article class="service">
+        <div class="art">✦</div>
+        <h3>Logo & Brand Identity</h3>
+        <p>Distinctive logos, colour palettes, typography, and visual
+        identity for a memorable business brand.</p>
+        <a class="mini-link"
+           href="https://wa.me/2349131164084?text=I%20need%20a%20logo">
+           Request a Logo →
+        </a>
+      </article>
+
+      <article class="service">
+        <div class="art">▣</div>
+        <h3>Flyer & Poster Design</h3>
+        <p>Promotional flyers, event posters, product adverts, campaign
+        graphics, and eye-catching designs.</p>
+        <a class="mini-link"
+           href="https://wa.me/2349131164084?text=I%20need%20a%20flyer">
+           Create My Flyer →
+        </a>
+      </article>
+
+      <article class="service">
+        <div class="art">▤</div>
+        <h3>Graphic Design</h3>
+        <p>Business cards, banners, thumbnails, invitations, and
+        polished visuals for everyday business needs.</p>
+        <a class="mini-link"
+           href="https://wa.me/2349131164084?text=I%20need%20graphic%20design">
+           Discuss a Design →
+        </a>
+      </article>
+
+      <article class="service">
+        <div class="art">🔥</div>
+        <h3>Flame Effects & Digital Art</h3>
+        <p>Fire effects, cinematic posters, dramatic text treatments,
+        gaming-style edits, and digital artwork.</p>
+        <a class="mini-link"
+           href="https://wa.me/2349131164084?text=I%20need%20digital%20art">
+           Request Digital Art →
+        </a>
+      </article>
+
+      <article class="service">
+        <div class="art">▣</div>
+        <h3>Social Media Design</h3>
+        <p>Branded posts, reels covers, YouTube thumbnails, Facebook
+        banners, and content templates.</p>
+        <a class="mini-link"
+           href="https://wa.me/2349131164084?text=I%20need%20social%20media%20design">
+           Upgrade My Page →
+        </a>
+      </article>
+
+      <article class="service">
+        <div class="art">✎</div>
+        <h3>Training & Mentorship</h3>
+        <p>Beginner-friendly guidance in Canva, Photoshop, AI design,
+        brand building, and finding clients.</p>
+        <a class="mini-link" href="#academy">Explore the Academy →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section id="academy">
+  <div class="container split">
+
+    <div class="panel academy">
+      <div class="eyebrow">Mind Elite Design Academy</div>
+      <h3>4 Weeks Graphic Design Masterclass</h3>
+      <p>Build your creative skills, learn practical design workflows,
+      and develop a portfolio you can show potential clients.</p>
+
+      <div class="stats">
+        <div class="stat">
+          <strong>₦3,000</strong>
+          <span>Course Fee</span>
+        </div>
+        <div class="stat">
+          <strong>30 Slots</strong>
+          <span>Limited Spaces</span>
+        </div>
+        <div class="stat">
+          <strong>Online</strong>
+          <span>Zoom + WhatsApp</span>
+        </div>
+      </div>
+
+      <p><strong>Scheduled dates:</strong> October 10 – November 2, 2026</p>
+
+      <a class="btn btn-gold"
+         href="https://wa.me/2349131164084?text=I%20want%20to%20register%20for%20the%20design%20masterclass">
+         Enquire / Register
+      </a>
+    </div>
+
+    <div class="panel">
+      <div class="eyebrow">What You'll Learn</div>
+      <h3>Skills for Your Creative Future.</h3>
+      <ul class="list">
+        <li>Canva: beginner to confident designer</li>
+        <li>Photoshop fundamentals and practical workflows</li>
+        <li>AI design tools and creative prompting</li>
+        <li>Brand identity and portfolio building</li>
+        <li>How to price services and find clients</li>
+      </ul>
+      <p class="fine">Contact customer service to confirm availability,
+      schedule, and payment details before paying.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="payment">
+  <div class="container split">
+
+    <div>
+      <div class="section-head">
+        <div class="eyebrow">Payment Options</div>
+        <h2>Simple, Clear Payment Information.</h2>
+        <p>OPay is the listed payment method. Contact customer service
+        to confirm the official account details before transferring money.</p>
+      </div>
+
+      <div class="pay-card">
+        <div class="opay-mark">OPay</div>
+        <div>
+          <strong>OPay Transfer</strong>
+          <div class="fine">For design orders and academy registration</div>
+        </div>
+      </div>
+
+      <button class="btn btn-gold" id="paymentBtn">
+        View OPay Payment Details
+      </button>
+      <p class="fine">The official OPay account number has not yet
+      been supplied for this website.</p>
+    </div>
+
+    <div class="panel">
+      <div class="eyebrow">Payment Safety</div>
+      <h3>Pay With Confidence.</h3>
+      <ul class="list">
+        <li>Request a quote before paying.</li>
+        <li>Verify the account name and number with customer service.</li>
+        <li>Keep your transfer receipt.</li>
+        <li>Never share your PIN or verification code.</li>
+      </ul>
+
+      <a class="btn btn-green"
+         href="https://wa.me/2349131164084?text=Please%20confirm%20the%20official%20OPay%20details">
+         Confirm via WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="location">
+  <div class="container split">
+
+    <div class="panel">
+      <div class="eyebrow">Studio Location</div>
+      <h3>Location & Region</h3>
+      <p>SSRANK STUDIO is based in:</p>
+      <div class="info-row">
+        <strong>📍 Benin City, Edo State, Nigeria</strong>
+      </div>
+      <p class="fine">No street address is published on this website.</p>
+    </div>
+
+    <div class="panel">
+      <div class="eyebrow">Customer Service</div>
+      <h3>Need Help With an Order?</h3>
+      <p>Ask about prices, design briefs, delivery timelines, training,
+      or payments.</p>
+      <a class="btn btn-green"
+         href="https://wa.me/2349131164084?text=Hello%20SSRANK%20STUDIO%20Customer%20Service">
+         Open Customer Service
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container split">
+
+    <div class="contact-panel">
+      <div class="eyebrow">Let's Work Together</div>
+      <h2>Have an Idea? Let's Design It.</h2>
+      <p>Message SSRANK STUDIO for logos, flyers, social
